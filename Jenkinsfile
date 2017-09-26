@@ -9,7 +9,7 @@ node {
                 '''
         }
         stage('Checkout scm') {
-            Checkout scm
+            checkout scm
         }
         stage('Build docker image') {
             sh '''docker build . -t node-sample-ap'''
