@@ -5,5 +5,8 @@ const books = [{
 }, {
     title: "Hitchhiker's guide to the galaxy",
     author: "Douglas Adams"
+},{
+    title: "Random book",
+    author: Math.random() * 10000
 }];
 export default books;
