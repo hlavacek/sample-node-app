@@ -9,7 +9,7 @@ node {
     }
     stage('Push image to registry') {
         withCredentials([string(credentialsId: 'REGISTRY_URL', variable: 'REGISTRY_URL')]) {
-            docker.withRegistry('https://$REGISTRY_URL') {
+            docker.withRegistry('http://$REGISTRY_URL') {
                 customImage.push()
             }
         }
