@@ -11,7 +11,7 @@ node {
         sh '''
             docker stop node-sample-app || true
             docker rm node-sample-app || true
-            docker run -p 81:8080 -d
+            docker run -p 81:8080 -d \
                 --name node-sample-app \
                 node-sample-app:latest
             '''
