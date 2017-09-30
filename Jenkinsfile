@@ -15,6 +15,5 @@ node {
                 --name node-sample-app \
                 node-sample-app:latest
             '''
-        }
     }
 }
